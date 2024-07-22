@@ -18,5 +18,31 @@ Build tools automate the process of buidling and managing projects, providing se
 3) Automation: Automates repitive tasks like compilations, Packaging, and testing.
 4) Project Configuration : Standardizes project structrure and Configurations.
 
-Why Specifically do a lot of people use Maven as their Building tool?
+Maven Build Life cycle 
+
+When we build a maven project, it executes a set of clearly defined tasks based on the project pom.xml configuration and the commadn-line options. This standard set of tasks creates the maven build lifecycle. The benefit of a clearly defined life cycle is that we have to remember only a few sets of commands to compile, build, install, and deploy our projects.
+
+Build-in Build lifecycles
+
+There are three built-in-build lifecycles.
+
+1) Default : handles project build and deployment
+2) clean : Handles project cleaning
+3) site: handles the creation of project site documentation.
+
+Maven Build Phases 
+
+Maven build lifecycle goes through a set of stages, they are called build phases. For example, the default lifecycle is made up of the following phases 
+Validate - Checks if the project is correct and all necessory infromation is available  
+         - Ensures the project directory structure and required files are in place.
+
+Compile - Compiles the source code of the project , convert the java files to bytecode (.class) files 
+Test - Runs the unit tests using necessory test frameworks 
+Package - packages the compiled code to a distributable format, like a JAR or WAR file.
+Verify - Runs any checks to verify the packae is valid and meets quality criteria 
+Install - install the package into the local maven repository 
+Deploy - copies the final package into the remote repository 
+
+
+
 
