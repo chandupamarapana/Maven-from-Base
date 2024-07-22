@@ -36,12 +36,14 @@ Maven build lifecycle goes through a set of stages, they are called build phases
 Validate - Checks if the project is correct and all necessory infromation is available  
          - Ensures the project directory structure and required files are in place.
 
-Compile - Compiles the source code of the project , convert the java files to bytecode (.class) files 
-Test - Runs the unit tests using necessory test frameworks 
-Package - packages the compiled code to a distributable format, like a JAR or WAR file.
-Verify - Runs any checks to verify the packae is valid and meets quality criteria 
-Install - install the package into the local maven repository 
-Deploy - copies the final package into the remote repository 
+1) Compile - Compiles the source code of the project , convert the java files to bytecode (.class) files 
+2) Test - Runs the unit tests using necessory test frameworks 
+3) Package - packages the compiled code to a distributable format, like a JAR or WAR file.
+4) Verify - Runs any checks to verify the packae is valid and meets quality criteria 
+5) Install - install the package into the local maven repository 
+6) Deploy - copies the final package into the remote repository
+
+
 
 
 
