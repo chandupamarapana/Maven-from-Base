@@ -43,6 +43,30 @@ Validate - Checks if the project is correct and all necessory infromation is ava
 5) Install - install the package into the local maven repository 
 6) Deploy - copies the final package into the remote repository
 
+Structure of a POM file in Maven and its heirachy 
+
+The pom.xml (Project Object Model) file is the core of a Maven project. Its structure typically include.
+
+1) Model Version - it defines the model version
+
+<modelVersion> 4.0.0 </modelVersion> 
+2) Group ID - A unique identifier for the project group (usually the company or organization)
+<groupId>com.example</groupId>
+
+3) Artifact Id - The Unique identifier for the project within the group
+<artifactId>common-lib-server-impl</artifactId>
+
+4) Version
+   the Version of the project 
+<version>5.0.0-SNAPSHOT</version>
+
+5) packaging - The packaging type of the project (eg., "jar", "war", "pom").
+6) name - human readable name for the project
+7) url : the URL for the project website.
+8) dependencies - Defines the dependencies that the project needs to build and run.
+   "groupId", "artifactID", "version" and "Scope" Elements for each dependency.
+
+   
 
 
 
